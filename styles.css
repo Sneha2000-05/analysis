@@ -1,0 +1,43 @@
+body {
+    background-image: url('./pexels-lukas-590011.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-size: 40px; /* increase this value to increase the font size */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+#comment-wall {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#comments {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#name, #comment {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

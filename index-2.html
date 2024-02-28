@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+  
+    </style>
+  </head>
+  <body>
+    <h1><p style="text-align: center">SENTIMENT ANALYSIS</p> </h1>
+    <h2>
+    <div class="img-overlay"></div> 
+    <p style= "text-align: center">WELCOME USER</p></h2>
+    <h1 class="" data-vertical="100%" data-show-delay="1500" data-hide-delay="200">   
+  </body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Comment Wall</title>
+     
+  </head>
+  <body>
+      <div id="comment-wall">
+          <div id="comments">
+              <!-- Comments will be inserted here -->
+          </div>
+          <form id="comment-form">
+              <input type="text" id="name" placeholder="Your Name" required>
+              <textarea id="comment" placeholder="Your Comment" required></textarea>
+              <button type="submit">Post Comment</button>
+          </form>
+      </div>
+      <script src="app.js"></script>
+      <button onclick="analyzeSentiment()">Analyze Sentiment</button>
+      <p id="result"></p>
+      <!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analysis Example</title>
+  </head>
+  <body>
+    <h1>Sentiment Analysis Example</h1>
+    <p id="sentiment-result"></p>
+
+    <script>
+      // Import the SentimentIntensityAnalyzer class from vaderSentiment
+      const { SentimentIntensityAnalyzer } = require("vader-sentiment");
+
+      // Create a new instance of the SentimentIntensityAnalyzer
+      const sentiment = new SentimentIntensityAnalyzer();
+
+      // Define the comment to analyze
+      const comment = "This is a great product, I highly recommend it!";
+
+      // Analyze the sentiment of the comment
+      const result = sentiment.polarity_scores(comment);
+
+      // Display the sentiment result in the HTML page
+      const resultElement = document.getElementById("sentiment-result");
+      resultElement.innerText = `Sentiment of the comment: ${JSON.stringify(result)}`;
+    </script>
+  </body>
+</html>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="script.js"></script>
+  </body>
+  </html>
